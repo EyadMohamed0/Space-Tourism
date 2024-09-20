@@ -1,0 +1,29 @@
+/* Start General Rules */
+:root {
+    --dark-color: #0B0D17;
+    --light-color: #D0D6F9;
+    --white: #ffffff;
+    --main-font: "Bellefair", serif;
+    --secondary-font: "Barlow Condensed", sans-serif; 
+    --text-font: "Barlow", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+}
+/* End General Rules */
+/* Start Navbar */
+.navbar .line {
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    background-color: #9797974c;
+    margin-left: 11%;
+    z-index: 2;
+}
+/* End Navbar */
