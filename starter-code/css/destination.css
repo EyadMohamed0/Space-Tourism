@@ -1,0 +1,111 @@
+/* Start General Rules */
+:root {
+    --dark-color: #0B0D17;
+    --light-color: #D0D6F9;
+    --white: #ffffff;
+    --main-font: "Bellefair", serif;
+    --secondary-font: "Barlow Condensed", sans-serif; 
+    --text-font: "Barlow", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    color: var(--white);
+}
+/* End General Rules */
+/* Start Content */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 10%);
+    margin-left: 10%;
+}
+.container > p {
+    grid-column: span 1 / span 1;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-family: var(--text-font);
+    letter-spacing: 4px;
+}
+.container > p > span {
+    color: #9797974c;
+}
+.container > img {
+    grid-column: 1 / 2;
+    margin-top: 15%;
+    margin-left: 75px;
+}
+.content {
+    grid-column: 2 / 3;
+    margin-top: 15%;
+}
+.content .sub-menu {
+    margin-bottom: 40px;
+}
+.content .sub-menu ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: -10px;
+}
+.content .sub-menu ul li a {
+    margin-inline: 17px;
+    font-family: var(--secondary-font);
+    color: var(--light-color);
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+.content ul li a::after {
+    bottom: -10px; 
+}
+.content h1 {
+    font-size: 100px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.content > p {
+    color: var(--light-color);
+    max-width: 415px;
+    font-size: 18px;
+    line-height: 150%;
+}
+.content .line {
+    margin-block: 40px;
+    position: block;
+    grid-column: 2 / 3;
+    margin-left: 0;
+}
+/* End Content */
+/* Start Info */
+.info {
+    position: absolute; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    margin-top: 80px;
+    width: 30%;
+}
+.info h1 {
+    font-size: 24px;
+    margin-top: -15px;
+}
+.info h1:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.info h1:last-of-type {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.info p {
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/* End Info */

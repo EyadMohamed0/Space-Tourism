@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/destination.css" />
+    <link rel="stylesheet" href="./css/framework.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <title>Destination | Moon</title>
+  </head>
+  <body>
+    <!-- 
+    Moon
+    Mars
+    Europa
+    Titan
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    Avg. distance
+    
 
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
-</body>
+    Est. travel time
+    3 days -->
+    <div class="landing">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="" />
+        </div>
+        <span class="line mobile-d-none"></span>
+        <ul>
+          <li><a href="/index.html" class="link-style">00 Home</a></li>
+          <li>
+            <a href="./destination-moon.html" class="link-style active"
+              >01 Destination</a
+            >
+          </li>
+          <li>
+            <a href="./crew-commander.html" class="link-style">02 Crew</a>
+          </li>
+          <li>
+            <a href="./technology-vehicle.html" class="link-style"
+              >03 Technology</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <p><span>01</span> PICK YOUR DESTINATION</p>
+        <img src="./assets/destination/image-moon.png" alt="" />
+        <div class="content">
+          <div class="sub-menu">
+            <ul>
+              <li><a href="./destination-moon.html" class="link-style active">MOON</a></li>
+              <li><a href="./destination-mars.html" class="link-style">MARS</a></li>
+              <li><a href="./destination-europa.html" class="link-style">EUROPA</a></li>
+              <li><a href="./destination-titan.html" class="link-style">TITAN</a></li>
+            </ul>
+          </div>
+          <h1>MOON</h1>
+          <p>
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <span class="line"></span>
+          <div class="info">
+            <p>AVG. DISTANCE</p>
+            <h1>384,400 KM</h1>
+            <p>EST. TRAVEL TIME</p>
+            <h1>3 DAYS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

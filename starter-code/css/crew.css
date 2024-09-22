@@ -1,0 +1,98 @@
+/* Start General Rules */
+:root {
+    --dark-color: #0B0D17;
+    --light-color: #D0D6F9;
+    --white: #ffffff;
+    --main-font: "Bellefair", serif;
+    --secondary-font: "Barlow Condensed", sans-serif; 
+    --text-font: "Barlow", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    color: var(--white);
+}
+/* End General Rules */
+/* Start Content */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 10%);
+    margin-left: 10%;
+    position: relative;
+}
+.container > p {
+    grid-column: span 1 / span 1;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-family: var(--text-font);
+    letter-spacing: 4px;
+}
+.container > p > span {
+    color: #9797974c;
+}
+.container img {
+    /* width: 357px; */
+    /* height: 500px; */
+    grid-column: 2 / 3;
+}
+.container .image {
+    position: absolute;
+    margin-top: 75px;
+}
+.info {
+    grid-column: 1 / 2;
+    margin-top: 15%;
+}
+.info h1 {
+    font-size: 3rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-block: 30px;
+    max-width: 500px;
+}
+.info h2 {
+    font-size: 1.5rem;
+    color: #9797974c;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+}
+.info > p {
+    color: var(--light-color);
+    max-width: 67%;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: var(--secondary-font);
+}
+/* End Content */
+/* Start Bullets */
+.bullets ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: -15px;
+    position: absolute;
+    margin-top: 20%;
+}
+.bullets ul a {
+    width: 15px;
+    height: 15px;
+    background-color: #9797974c;
+    border-radius: 50%;
+    margin-inline: 15px;
+    cursor: pointer;
+}
+.bullets ul a:not(.active):hover {
+    background-color: #9797977e;
+}
+.bullets .active {
+    background-color: var(--white);
+}
+.bullets .special {
+    margin-top: calc(13% + 7px)
+}
+/* End Bullets */
